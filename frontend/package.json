@@ -19,9 +19,11 @@
   },
   "homepage": "https://github.com/Anubothu-Aravind/photo-invoice-app#readme",
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.12",
     "@vitejs/plugin-react": "^5.0.2",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "tailwindcss": "^4.1.12",
     "vite": "^7.1.3"
   }
 }
