@@ -21,8 +21,13 @@
   "dependencies": {
     "@tailwindcss/vite": "^4.1.12",
     "@vitejs/plugin-react": "^5.0.2",
+    "clsx": "^2.1.1",
+    "dom": "^0.0.3",
+    "lucide-react": "^0.542.0",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
+    "router": "^2.2.0",
+    "tailwind-merge": "^3.3.1",
     "tailwindcss": "^4.1.12",
     "vite": "^7.1.3"
   }

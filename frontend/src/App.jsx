@@ -1,13 +1,16 @@
-import React from 'react'
+import React from "react";
+import "../src/Global.css";
+import Sidebar from "../Components/SideBar";
 
 function App() {
   return (
-    <div style={{ fontFamily: 'sans-serif', textAlign: 'center', marginTop: '2rem' }}>
-      <h1>📸 Photo Invoice App</h1>
-      <p>Your React + Vite frontend is running!</p>
-      <h1 className="text-4xl font-bold">Welcome to the Photo Invoice App</h1>
-    </div>
-  )
+    <>
+      <Sidebar />
+      <h1 className="text-4xl font-bold bg-gradient-to-r from-purple-500 to-blue-500 text-transparent bg-clip-text">
+        Welcome to the Photo Invoice App
+      </h1>
+    </>
+  );
 }
 
-export default App
+export default App;
