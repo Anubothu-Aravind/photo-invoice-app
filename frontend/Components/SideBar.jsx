@@ -1,5 +1,12 @@
 import { useState } from "react";
 import {
+  Routes,
+  Route,
+  Link,
+  useLocation,
+  BrowserRouter,
+} from "react-router-dom";
+import {
   Home,
   Users,
   Calendar,
@@ -11,41 +18,101 @@ import {
   Menu,
   X,
 } from "lucide-react";
+import CalendarPage from "./Calender";
+import Dashboard from "./DashBoard";
+import CreateInvoice from "./CreateInvoice";
+import Reports from "./Reports";
+import Clients from "./Client"; 
+
+
+
+
+
+
+const SettingsPage = () => (
+  <div className="p-6">
+    <h1 className="text-3xl font-bold text-gray-900 mb-4">Settings</h1>
+    <div className="bg-white rounded-lg shadow p-6 max-w-2xl">
+      <div className="space-y-6">
+        <div>
+          <h3 className="text-lg font-semibold text-gray-800 mb-3">
+            Profile Settings
+          </h3>
+          <div className="space-y-4">
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Name
+              </label>
+              <input
+                type="text"
+                defaultValue="Aravind"
+                className="w-full border border-gray-300 rounded-md px-3 py-2"
+              />
+            </div>
+            <div>
+              <label className="block text-sm font-medium text-gray-700 mb-1">
+                Email
+              </label>
+              <input
+                type="email"
+                defaultValue="aravind@example.com"
+                className="w-full border border-gray-300 rounded-md px-3 py-2"
+              />
+            </div>
+          </div>
+        </div>
+        <div>
+          <h3 className="text-lg font-semibold text-gray-800 mb-3">
+            Preferences
+          </h3>
+          <div className="space-y-2">
+            <label className="flex items-center">
+              <input type="checkbox" className="mr-2" defaultChecked />
+              <span className="text-sm text-gray-700">Email notifications</span>
+            </label>
+            <label className="flex items-center">
+              <input type="checkbox" className="mr-2" />
+              <span className="text-sm text-gray-700">Dark mode</span>
+            </label>
+          </div>
+        </div>
+        <button className="bg-purple-600 text-white px-4 py-2 rounded-md hover:bg-purple-700">
+          Save Changes
+        </button>
+      </div>
+    </div>
+  </div>
+);
 
 const SideBar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [currentRoute, setCurrentRoute] = useState("/");
+  const location = useLocation();
 
   const menuItems = [
     {
       icon: Home,
       label: "Dashboard",
       path: "/",
-      route: "dashboard",
     },
     {
       icon: Calendar,
       label: "Calendar",
       path: "/calendar",
-      route: "calendar",
     },
     {
       icon: FileText,
       label: "Create Invoice",
       path: "/create-invoice",
-      route: "create-invoice",
     },
     {
       icon: BarChart3,
       label: "Reports",
       path: "/reports",
-      route: "reports",
     },
     {
       icon: Users,
       label: "Clients",
       path: "/clients",
-      route: "clients",
     },
   ];
 
@@ -53,23 +120,14 @@ const SideBar = () => {
     icon: Settings,
     label: "Settings",
     path: "/settings",
-    route: "settings",
   };
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
   };
 
-  const handleNavigation = (path, route) => {
-    setCurrentRoute(path);
-    setIsMobileMenuOpen(false);
-    // Here you would typically use React Router's navigate function
-    // navigate(path);
-    console.log(`Navigating to: ${path} (${route})`);
-  };
-
   const isActive = (path) => {
-    return currentRoute === path;
+    return location.pathname === path;
   };
 
   return (
@@ -90,14 +148,11 @@ const SideBar = () => {
       >
         {/* Logo */}
         <div className="p-6 flex items-center justify-between lg:justify-start">
-          <button
-            onClick={() => handleNavigation("/", "dashboard")}
-            className="flex items-center"
-          >
+          <Link to="/" className="flex items-center">
             <div className="w-8 h-8 bg-gradient-to-r from-purple-500 to-blue-500 rounded-lg flex items-center justify-center">
               <div className="w-4 h-4 bg-white rounded transform rotate-45"></div>
             </div>
-          </button>
+          </Link>
           {/* Mobile close button */}
           <button
             onClick={toggleMobileMenu}
@@ -115,9 +170,10 @@ const SideBar = () => {
               const active = isActive(item.path);
               return (
                 <li key={index}>
-                  <button
-                    onClick={() => handleNavigation(item.path, item.route)}
-                    className={`w-full flex items-center px-3 py-2 text-sm font-medium rounded-lg transition-colors text-left ${
+                  <Link
+                    to={item.path}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className={`w-full flex items-center px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
                       active
                         ? "bg-purple-50 text-purple-700 border-r-2 border-purple-700"
                         : "text-gray-700 hover:bg-gray-100"
@@ -125,7 +181,7 @@ const SideBar = () => {
                   >
                     <Icon className="mr-3 h-5 w-5 flex-shrink-0" />
                     <span className="truncate">{item.label}</span>
-                  </button>
+                  </Link>
                 </li>
               );
             })}
@@ -134,11 +190,10 @@ const SideBar = () => {
 
         {/* Settings */}
         <div className="p-4 border-t border-gray-200">
-          <button
-            onClick={() =>
-              handleNavigation(settingsRoute.path, settingsRoute.route)
-            }
-            className={`w-full flex items-center px-3 py-2 text-sm font-medium rounded-lg transition-colors text-left ${
+          <Link
+            to={settingsRoute.path}
+            onClick={() => setIsMobileMenuOpen(false)}
+            className={`w-full flex items-center px-3 py-2 text-sm font-medium rounded-lg transition-colors ${
               isActive(settingsRoute.path)
                 ? "bg-purple-50 text-purple-700 border-r-2 border-purple-700"
                 : "text-gray-700 hover:bg-gray-100"
@@ -146,7 +201,7 @@ const SideBar = () => {
           >
             <Settings className="mr-3 h-5 w-5 flex-shrink-0" />
             <span className="truncate">{settingsRoute.label}</span>
-          </button>
+          </Link>
         </div>
       </div>
 
@@ -199,37 +254,21 @@ const SideBar = () => {
           </div>
         </header>
 
-        {/* Main Content Area */}
-        <main className="flex-1 p-4 sm:p-6 overflow-auto">
-          <div className="w-full h-full min-h-[400px] border-2 border-dashed border-gray-300 rounded-lg flex items-center justify-center">
-            <div className="text-center p-4">
-              <h3 className="text-lg font-medium text-gray-900 mb-2">
-                Current Route: {currentRoute}
-              </h3>
-              <p className="text-gray-500 text-sm sm:text-base">
-                Add your page components here based on the current route
-              </p>
-              <div className="mt-4 text-xs text-gray-400">
-                Available routes:
-                <br />
-                / (Dashboard)
-                <br />
-                /calendar
-                <br />
-                /create-invoice
-                <br />
-                /reports
-                <br />
-                /clients
-                <br />
-                /settings
-              </div>
-            </div>
-          </div>
+        {/* Main Content Area with Routes */}
+        <main className="flex-1 overflow-auto">
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/calendar" element={<CalendarPage />} />
+            <Route path="/create-invoice" element={<CreateInvoice />} />
+            <Route path="/reports" element={<Reports />} />
+            <Route path="/clients" element={<Clients />} />
+            <Route path="/settings" element={<SettingsPage />} />
+          </Routes>
         </main>
       </div>
     </div>
   );
 };
+
 
 export default SideBar;
