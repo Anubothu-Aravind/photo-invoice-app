@@ -1,1 +1,2 @@
 [2026-03-09T08:12:19.429Z] add fallback for browsers without WebSocket support
+[2026-03-09T12:13:00.229Z] update cron expression for new maintenance window
