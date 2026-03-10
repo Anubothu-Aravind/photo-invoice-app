@@ -6,3 +6,4 @@
 [2026-03-10T03:55:12.938Z] sync package-lock after merge
 [2026-03-10T09:03:42.989Z] refactor error handling to use custom error classes
 [2026-03-10T12:11:23.484Z] add usage examples to README
+[2026-03-10T15:50:29.487Z] fix flaky test caused by timing dependency
