@@ -8,3 +8,4 @@
 [2026-03-10T12:11:23.484Z] add usage examples to README
 [2026-03-10T15:50:29.487Z] fix flaky test caused by timing dependency
 [2026-03-11T14:27:22.598Z] update API rate limit documentation
+[2026-03-11T15:22:20.042Z] update nginx reverse proxy configuration
