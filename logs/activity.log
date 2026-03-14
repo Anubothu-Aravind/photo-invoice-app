@@ -14,3 +14,4 @@
 [2026-03-13T10:25:11.081Z] add support for custom log levels
 [2026-03-13T16:17:02.715Z] implement in-memory caching layer
 [2026-03-14T04:03:06.814Z] decouple logging from business logic
+[2026-03-14T04:17:10.927Z] fix memory leak in event listener cleanup
