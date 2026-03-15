@@ -18,3 +18,4 @@
 [2026-03-14T11:24:09.226Z] add export functionality for reports
 [2026-03-15T04:18:11.260Z] archive legacy migration scripts
 [2026-03-15T11:52:52.847Z] verify webhook delivery retry logic
+[2026-03-15T12:42:16.453Z] add snapshot tests for response formats
