@@ -2,3 +2,4 @@
 [2026-03-16T11:02:46.713Z] clean up unused environment variables
 [2026-03-16T13:34:40.226Z] audit and fix npm security vulnerabilities
 [2026-03-17T11:23:26.595Z] implement lazy loading for dashboard cards
+[2026-03-17T11:55:12.775Z] add CORS configuration for new frontend domain
