@@ -10,3 +10,4 @@
 [2026-03-17T15:40:31.682Z] clarify deployment steps in README
 [2026-03-18T05:56:50.098Z] wip: save progress on feature branch
 [2026-03-18T09:31:57.368Z] update README with setup instructions
+[2026-03-18T15:43:51.030Z] add health check endpoint with detailed status
