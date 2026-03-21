@@ -19,3 +19,4 @@
 [2026-03-20T12:40:25.852Z] update lock file after dependency audit
 [2026-03-21T05:10:48.235Z] validate error responses match schema
 [2026-03-21T09:42:28.225Z] support CSV and JSON export formats
+[2026-03-21T10:16:59.402Z] fix memory leak in event listener cleanup
