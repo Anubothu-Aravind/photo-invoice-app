@@ -17,3 +17,4 @@
 [2026-03-19T12:50:17.171Z] fix typo in inline documentation
 [2026-03-19T15:53:13.017Z] patch race condition in async handler
 [2026-03-20T12:40:25.852Z] update lock file after dependency audit
+[2026-03-21T05:10:48.235Z] validate error responses match schema
