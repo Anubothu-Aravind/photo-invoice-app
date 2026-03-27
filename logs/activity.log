@@ -8,3 +8,4 @@
 [2026-03-26T08:48:20.897Z] apply consistent code formatting
 [2026-03-26T09:03:16.739Z] align object properties for readability
 [2026-03-26T16:37:36.834Z] update error messages to be more user-friendly
+[2026-03-27T12:03:39.975Z] clean up unused environment variables
