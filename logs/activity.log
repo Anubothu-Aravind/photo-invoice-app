@@ -1,2 +1,3 @@
 [2026-03-30T14:46:52.301Z] update ESLint config with stricter rules
 [2026-03-30T15:29:38.135Z] resolve null pointer in user validation
+[2026-03-31T03:36:24.490Z] refactor error handling to use custom error classes
