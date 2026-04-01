@@ -5,3 +5,4 @@
 [2026-03-31T15:48:06.385Z] verify webhook delivery retry logic
 [2026-03-31T15:59:29.498Z] implement in-memory caching layer
 [2026-04-01T08:05:58.147Z] add lint check to pre-commit hook
+[2026-04-01T15:22:40.717Z] validate error responses match schema
