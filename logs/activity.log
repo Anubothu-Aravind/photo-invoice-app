@@ -6,3 +6,4 @@
 [2026-05-02T04:34:24.445Z] fix incorrect timestamp parsing for UTC dates
 [2026-05-02T05:31:01.695Z] sync package-lock after merge
 [2026-05-02T11:27:34.214Z] decouple logging from business logic
+[2026-05-02T15:59:13.799Z] add search with debounced input
