@@ -9,3 +9,4 @@
 [2026-05-02T15:59:13.799Z] add search with debounced input
 [2026-05-02T16:09:12.765Z] enforce single quotes across codebase
 [2026-05-02T16:42:36.540Z] enforce trailing commas in config
+[2026-05-03T11:18:42.285Z] pin dependency versions for reproducible builds
