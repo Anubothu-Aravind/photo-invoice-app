@@ -10,3 +10,4 @@
 [2026-05-02T16:09:12.765Z] enforce single quotes across codebase
 [2026-05-02T16:42:36.540Z] enforce trailing commas in config
 [2026-05-03T11:18:42.285Z] pin dependency versions for reproducible builds
+[2026-05-03T12:09:12.031Z] enforce single quotes across codebase
