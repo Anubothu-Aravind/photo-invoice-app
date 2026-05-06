@@ -2,3 +2,4 @@
 [2026-05-04T14:53:54.581Z] implement in-memory caching layer
 [2026-05-05T08:01:46.662Z] fix memory leak in event listener cleanup
 [2026-05-06T04:26:42.528Z] bugretry logic was skipping last attempt
+[2026-05-06T06:37:21.114Z] update API documentation with new endpoints
