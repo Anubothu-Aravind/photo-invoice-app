@@ -2,3 +2,4 @@
 [2026-05-11T10:30:33.022Z] fix memory leak in event listener cleanup
 [2026-05-11T14:33:54.188Z] add real-time status updates via SSE
 [2026-05-11T15:31:27.278Z] introduce dark mode toggle
+[2026-05-11T16:04:43.104Z] fix broken redirect after authentication
