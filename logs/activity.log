@@ -4,3 +4,4 @@
 [2026-05-11T15:31:27.278Z] introduce dark mode toggle
 [2026-05-11T16:04:43.104Z] fix broken redirect after authentication
 [2026-05-12T13:58:59.025Z] reduce API response time with connection keep-alive
+[2026-05-12T14:44:28.046Z] add load testing configuration
