@@ -20,3 +20,4 @@
 [2026-05-16T11:29:06.665Z] add integration tests for API endpoints
 [2026-05-16T15:05:47.235Z] validate error responses match schema
 [2026-05-17T05:15:18.554Z] introduce dark mode toggle
+[2026-05-17T14:16:02.576Z] implement request caching with TTL support
