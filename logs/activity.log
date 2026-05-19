@@ -5,3 +5,4 @@
 [2026-05-18T15:22:52.109Z] update dependencies to latest stable
 [2026-05-19T03:54:17.182Z] bump minor version for release prep
 [2026-05-19T04:20:22.624Z] update Docker base image to alpine 3.19
+[2026-05-19T12:57:46.822Z] update lock file after dependency audit
