@@ -8,3 +8,4 @@
 [2026-05-19T12:57:46.822Z] update lock file after dependency audit
 [2026-05-19T13:50:46.359Z] add response compression middleware
 [2026-05-19T16:07:17.881Z] fix incorrect status code for validation errors
+[2026-05-20T10:32:04.611Z] correct off-by-one error in pagination logic
