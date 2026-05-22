@@ -14,3 +14,4 @@
 [2026-05-22T04:21:31.854Z] handle undefined response from external API
 [2026-05-22T11:32:25.484Z] add response compression middleware
 [2026-05-22T12:23:34.723Z] reduce bundle size by tree-shaking unused imports
+[2026-05-22T13:34:34.397Z] move business logic out of controller
