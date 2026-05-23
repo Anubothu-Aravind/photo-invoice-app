@@ -18,3 +18,4 @@
 [2026-05-23T11:23:46.622Z] add architecture decision records
 [2026-05-23T11:31:54.496Z] add retry mechanism with exponential backoff
 [2026-05-23T13:08:18.959Z] resolve flaky timeout in database connection
+[2026-05-23T14:54:48.502Z] resolve null pointer in user validation
