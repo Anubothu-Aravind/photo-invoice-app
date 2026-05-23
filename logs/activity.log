@@ -16,3 +16,4 @@
 [2026-05-22T12:23:34.723Z] reduce bundle size by tree-shaking unused imports
 [2026-05-22T13:34:34.397Z] move business logic out of controller
 [2026-05-23T11:23:46.622Z] add architecture decision records
+[2026-05-23T11:31:54.496Z] add retry mechanism with exponential backoff
