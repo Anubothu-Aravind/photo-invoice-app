@@ -22,3 +22,4 @@
 [2026-05-24T10:34:40.232Z] reorganize file structure for better discoverability
 [2026-05-24T11:21:31.023Z] add architecture decision records
 [2026-05-24T11:56:59.568Z] bugretry logic was skipping last attempt
+[2026-05-24T12:32:41.402Z] add JSDoc comments to public API methods
