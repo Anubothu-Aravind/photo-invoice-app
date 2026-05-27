@@ -4,3 +4,4 @@
 [2026-05-26T05:54:29.978Z] add troubleshooting section to docs
 [2026-05-26T12:54:34.574Z] resolve flaky timeout in database connection
 [2026-05-27T05:44:03.234Z] add health check endpoint with detailed status
+[2026-05-27T10:52:51.941Z] fix memory leak in event listener cleanup
