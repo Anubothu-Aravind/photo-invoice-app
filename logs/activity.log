@@ -8,3 +8,4 @@
 [2026-05-27T11:05:10.890Z] resolve null pointer in user validation
 [2026-05-28T07:32:17.755Z] fix flaky build caused by parallel test collision
 [2026-05-29T05:59:47.503Z] update nginx reverse proxy configuration
+[2026-05-29T11:52:28.509Z] fix broken image paths in production build
