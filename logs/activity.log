@@ -12,3 +12,4 @@
 [2026-05-29T13:32:15.613Z] add architecture decision records
 [2026-05-30T08:00:56.797Z] replace callback pattern with async/await
 [2026-05-30T12:10:10.000Z] refactor config loading to support multiple envs
+[2026-05-30T15:30:15.722Z] add inline comments for complex algorithm
